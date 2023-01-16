@@ -1,0 +1,39 @@
+.container {
+    flex-direction: column;
+    border:  solid rgb(192, 51, 98) 3px;
+    border-radius: 5px;
+    background-color: #dbe3e69a;
+    backdrop-filter: blur(4px);
+    margin: 20px;
+    font-family: sans-serif;
+    width: 500px;
+    height: 320px;
+}
+
+
+A:link {
+    color: black;
+    text-decoration: none;
+}
+
+A:visited {
+    color: black;
+    text-decoration: none;
+}
+.container:hover {
+    transform: scale(1.03);
+    transition: 0.4s;
+}
+
+.container img {
+    width: 50%;
+    height: 150px;
+    align-self: center;
+    margin: 2px;
+}
+
+.container .temperaments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

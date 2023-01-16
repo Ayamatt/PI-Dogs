@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    border:  solid rgb(41, 20, 27) 3px;
+    border-radius: 5px;
+    background-color: #dbe3e69a;
+    backdrop-filter: blur(4px);
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 700px;
+    margin-right: 700px;
+    margin-top: 50px;
+    height: 800px;
+    justify-content: center;
+}
+
+img {
+    width: 800px;
+    height: 450px;
+    align-self: center;
+    border-radius: 4px;
+}
