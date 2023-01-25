@@ -7,6 +7,7 @@ export default function Cards (props) {
     return (
 
         <div className={s.container} >
+            {console.log(props)}
             {props.dogs.length ? (
                 props.dogs.map(el => (
                     <Link to={`/Detail/${el.id}`} >
@@ -15,6 +16,7 @@ export default function Cards (props) {
                             image={el.image}
                             name={el.name}
                             temperament={el.temperament}
+                            age={el.age}
                             weight={el.weight} 
                             weight_min={el.weight_min}
                             weight_max={el.weight_max}

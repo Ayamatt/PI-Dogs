@@ -99,6 +99,7 @@ module.exports = {
                     }
                 })
 
+
                 for(let i = 0; i < tempersObj.length; i++) {
                     if(tempersObj[i].name) {
                         await Temper.findOrCreate({

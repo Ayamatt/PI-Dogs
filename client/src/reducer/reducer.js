@@ -62,7 +62,7 @@ const reducer = (state=initialState, action) => {
             }
 
         case ORDER_NAME:
-            const allDogs3 = state.dogs;
+            const allDogs3 = state.allDogs;
             const dogsSorted = action.payload === 'asc' ?
             allDogs3.sort((a,b) => {
                 if(a.name > b.name) {
@@ -89,11 +89,11 @@ const reducer = (state=initialState, action) => {
             }
 
         case ORDER_WEIGHT:
-            const allDogs4 = state.dogs;
+            const allDogs4 = state.allDogs;
             const dogsOrdened = action.payload === 'mas' ?
-            allDogs4.sort((a, b) => {
-                let num1 = Number(b.weight.substring(0,2));
-                let num2 = Number(a.weight.substring(0,2));
+            allDogs4.sort((a,b) => {
+                let num1 = b.weight ? Number(b.weight.substring(0,2)) : b.weight_min;
+                let num2 = a.weight ? Number(a.weight.substring(0,2)) : a.weight_min;
 
 
                 if(num1 === NaN && num2 !== NaN) {
@@ -113,8 +113,8 @@ const reducer = (state=initialState, action) => {
                  return 0;
 
             }) : allDogs4.sort((a,b) => {
-                let num1 = Number(b.weight.substring(0,2));
-                let num2 = Number(a.weight.substring(0,2));
+                let num1 = b.weight ? Number(b.weight.substring(0,2)) : b.weight_min;
+                let num2 = a.weight ? Number(a.weight.substring(0,2)) : a.weight_min;
 
                 if(num1 === NaN && num2 !== NaN) {
                     return 0;

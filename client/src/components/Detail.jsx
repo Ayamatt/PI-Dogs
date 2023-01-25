@@ -29,7 +29,7 @@ export default function Detail (props) {
 
             ) : (<div></div>)}
 
-            {dog.length && dog[0].age ? (
+            {dog.length && dog[0].height_min ? (
 
                 <div> 
                     <img src={dog[0].image} />
@@ -37,7 +37,7 @@ export default function Detail (props) {
                     <h4> Temperaments: {dog[0].temperament} </h4>
                     <h4> Height: {dog[0].height_min} - {dog[0].height_max} centímetros </h4>
                     <h4> Weight: {dog[0].weight_min} - {dog[0].weight_max} Kgs </h4>
-                    <h4> Life span: {dog[0].age} </h4>
+                    <h4> Life span: {dog[0].age} years </h4>
                 </div>
 
             ) : (<div></div>)}

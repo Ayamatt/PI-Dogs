@@ -16,8 +16,8 @@ export default function SearchBar () {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        dispatch(getDog(search))
-        setSearch('')
+        dispatch(getDog(search));
+        setSearch('');
     }
 
     return (
