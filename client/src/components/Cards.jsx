@@ -7,7 +7,6 @@ export default function Cards (props) {
     return (
 
         <div className={s.container} >
-            {console.log(props)}
             {props.dogs.length ? (
                 props.dogs.map(el => (
                     <Link to={`/Detail/${el.id}`} >

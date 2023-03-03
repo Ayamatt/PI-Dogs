@@ -25,7 +25,9 @@ export default function SearchBar () {
         <div className={s.container}>
             <h1> Dogs API </h1>
             <Link to = '/CreateDog'> Crear perro </Link>
-            <input type='text' value={search} onChange={e => searcher(e)} />
+            <div className={s.search}>
+                <input type='text' value={search} onChange={e => searcher(e)} />
+            </div>
             <button type='submit' onClick={e => handleSubmit(e)}> Buscar </button>
         </div>
     )

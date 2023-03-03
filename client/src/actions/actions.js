@@ -43,7 +43,7 @@ export const getTemperaments = () => {
 };
 
 export const postDog = (dog) => {
-    return async function (dispatch) {
+    return async function () {
         let json = await axios.post('http://localhost:3001/dogs', dog)
         return json;
     }

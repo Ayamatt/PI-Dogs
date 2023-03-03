@@ -1,4 +1,10 @@
 .container {
     display: inline-block;
     flex-direction: column;
+    background-color: #dbe3e69a;
+    backdrop-filter: blur(4px);
+    border-radius: 3px;
+    margin: 20px;
+    border: 2px solid aliceblue
 }
+
