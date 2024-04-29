@@ -10,7 +10,7 @@ export default function Cards (props) {
             {props.dogs.length ? (
                 props.dogs.map(el => (
                     <Link to={`/Detail/${el.id}`} >
-                        <div key={el.name} className={s.card}> 
+                        <div key={el.id} className={s.card}> 
                             <Card
                             image={el.image}
                             name={el.name}

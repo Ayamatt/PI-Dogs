@@ -11,7 +11,7 @@ const getApi = async () => {
             weight: el.weight?.metric,
             age: el.life_span,
             temperament: el.temperament,
-            image: el.image.url,
+            image: `https://cdn2.thedogapi.com/images/${el.reference_image_id}.jpg`,
         };
     });
     return data;

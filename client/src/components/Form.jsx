@@ -95,7 +95,6 @@ export default function Form () {
             alert('Invalid camps');
         }
         else{
-            console.log(input);
             dispatch(postDog(input));
             setInput({
                 name: '',
